@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 1</title>
+</head>
+<body>
+	 
+	 
+	Current Date and Time is
+	<input style="border:none; background-color: none;" type="name" id="currentDateTime"></input>
+	<br><br><br>
+	<script>
+	var today = new Date();
+	var date = today.getFullYear()+'-'+'0'+(today.getMonth()+1)+'-'+today.getDate();
+	var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+	var dateTime = date+' '+time;
+	document.getElementById("currentDateTime").value = dateTime;
+	</script>
+
+</body>
+</html>
